@@ -1,0 +1,20 @@
+# Tool-generated outputs
+PnR/Outputs/
+PnR/Reports/
+Logs/
+Synthesis/Reports/
+Synthesis/Outputs/
+
+# Binary and large files
+*.gds
+*.spef
+*.vg
+*.ddc
+*.svf
+
+# Tool scratch files
+*.log
+*.rpt
+*.bak
+default.svf
+command.log
