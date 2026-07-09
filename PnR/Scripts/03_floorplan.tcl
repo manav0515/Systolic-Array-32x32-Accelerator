@@ -41,7 +41,7 @@ set_individual_pin_constraints \
     -pin_spacing_distance 1
 
 set_individual_pin_constraints \
-    -ports [get_ports {result_bus[*]}] \
+    -ports [get_ports {result_out[*]}] \
     -sides 3 \
     -pin_spacing_distance 1
 
