@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : systolic_array_32x32
+Version: W-2024.09
+Date   : Thu Jul  9 14:07:34 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p7vn40c   Library: saed32rvt_ss0p7vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: ROW[0].COL[0].u_pe/b_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ROW[0].COL[0].u_pe/mult_reg_reg[14]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  systolic_array_32x32
+                     2000000               saed32rvt_ss0p7vn40c
+  pe_DW8_ACCW32_1023 8000                  saed32rvt_ss0p7vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ROW[0].COL[0].u_pe/b_reg_reg[1]/CLK (DFFARX2_RVT)       0.00 #     0.00 r
+  ROW[0].COL[0].u_pe/b_reg_reg[1]/Q (DFFARX2_RVT)         1.19       1.19 r
+  ROW[0].COL[0].u_pe/U36/Y (NAND2X1_RVT)                  0.43       1.62 f
+  ROW[0].COL[0].u_pe/U353/Y (NOR3X0_RVT)                  0.61       2.23 r
+  ROW[0].COL[0].u_pe/U400/Y (AOI21X1_RVT)                 0.32       2.55 f
+  ROW[0].COL[0].u_pe/intadd_3/U4/CO (FADDX1_RVT)          0.55       3.10 f
+  ROW[0].COL[0].u_pe/intadd_3/U3/S (FADDX1_RVT)           0.89       3.99 r
+  ROW[0].COL[0].u_pe/intadd_5/U2/S (FADDX1_RVT)           0.70       4.68 f
+  ROW[0].COL[0].u_pe/U29/Y (NAND2X1_RVT)                  0.50       5.18 r
+  ROW[0].COL[0].u_pe/U318/Y (OAI21X1_RVT)                 0.54       5.72 f
+  ROW[0].COL[0].u_pe/U328/Y (AOI21X1_RVT)                 0.60       6.32 r
+  ROW[0].COL[0].u_pe/U4/Y (OAI21X1_RVT)                   0.48       6.80 f
+  ROW[0].COL[0].u_pe/U343/Y (AO21X1_RVT)                  0.54       7.34 f
+  ROW[0].COL[0].u_pe/U356/Y (XNOR3X1_RVT)                 1.06       8.40 f
+  ROW[0].COL[0].u_pe/mult_reg_reg[14]/D (DFFARX1_RVT)     0.00       8.40 f
+  data arrival time                                                  8.40
+
+  clock CLK (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             0.00       9.50
+  clock uncertainty                                      -0.15       9.35
+  ROW[0].COL[0].u_pe/mult_reg_reg[14]/CLK (DFFARX1_RVT)
+                                                          0.00       9.35 r
+  library setup time                                     -0.61       8.74
+  data required time                                                 8.74
+  --------------------------------------------------------------------------
+  data required time                                                 8.74
+  data arrival time                                                 -8.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.34
+
+
+1

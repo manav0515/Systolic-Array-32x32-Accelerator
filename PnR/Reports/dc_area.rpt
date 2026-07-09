@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : systolic_array_32x32
+Version: W-2024.09
+Date   : Thu Jul  9 14:07:16 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'systolic_array_32x32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32rvt_ss0p7vn40c (File: /home/student/Downloads/Workshop/ref/lib/stdcell_rvt/saed32rvt_ss0p7vn40c.db)
+
+Number of ports:                        60976
+Number of nets:                        679095
+Number of cells:                       546730
+Number of combinational cells:         462986
+Number of sequential cells:             82720
+Number of macros/black boxes:               0
+Number of buf/inv:                      78229
+Number of references:                    1044
+
+Combinational area:            1211450.051348
+Buf/Inv area:                   106527.761932
+Noncombinational area:          589158.664078
+Macro/Black Box area:                0.000000
+Net Interconnect area:          692309.963048
+
+Total cell area:               1800608.715426
+Total area:                    2492918.678474
+1
