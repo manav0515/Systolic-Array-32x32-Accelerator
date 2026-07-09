@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : systolic_array_32x32
+Version: W-2024.09
+Date   : Thu Jul  9 15:08:08 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p7vn40c (File: /home/student/Downloads/Workshop/ref/lib/stdcell_rvt/saed32rvt_ss0p7vn40c.db)
+
+Number of ports:                        64073
+Number of nets:                        877780
+Number of cells:                       732341
+Number of combinational cells:         648597
+Number of sequential cells:             82720
+Number of macros/black boxes:               0
+Number of buf/inv:                     162915
+Number of references:                    1039
+
+Combinational area:            1484899.349201
+Buf/Inv area:                   220210.948298
+Noncombinational area:          756866.265125
+Macro/Black Box area:                0.000000
+Net Interconnect area:          961162.200608
+
+Total cell area:               2241765.614326
+Total area:                    3202927.814934
+1
