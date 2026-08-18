@@ -8,7 +8,7 @@
 
 source ../Scripts/systolic/01_setup.tcl
 
-open_lib   SYSTOLIC_LIB6
+open_lib   SYSTOLIC_LIB55
 open_block systolic_cts
 
 #--------------------------------------------------------------
@@ -39,7 +39,7 @@ set_app_options -name route.common.enable_multi_thread \
     -value true
 
 set_app_options -name route.common.concurrent_redundant_via_mode \
-    -value revisit
+  -value insert_at_high_cost
 
 set_app_options -name route.common.concurrent_redundant_via_effort_level \
     -value medium
@@ -140,7 +140,7 @@ set_app_options -name route.detail.optimize_wire_via_effort_level \
     -value medium
 
 set_app_options -name route.detail.optimize_tie_off_effort_level \
-    -value medium
+    -value high
 
 #--------------------------------------------------------------
 # SECTION 5: ROUTING SEQUENCE
