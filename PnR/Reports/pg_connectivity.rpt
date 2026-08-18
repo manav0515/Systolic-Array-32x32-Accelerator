@@ -1,0 +1,38 @@
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 731317
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 2035
+Number of VDD Vias: 1691100
+Number of VDD Terminals: 0
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 75
+  Number of floating vias: 0
+  Number of floating std cells: 579055
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 2031
+Number of VSS Vias: 1681810
+Number of VSS Terminals: 0
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 76
+  Number of floating vias: 0
+  Number of floating std cells: 615128
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 37 seconds.
+{PATH_11_10 PATH_11_11 PATH_11_23 PATH_11_35 PATH_11_47 PATH_11_48 PATH_11_59 PATH_11_60 PATH_11_71 PATH_11_72 PATH_11_84 PATH_11_96 PATH_11_108 PATH_11_109 PATH_11_120 PATH_11_121 PATH_11_132 PATH_11_133 PATH_11_145 PATH_11_157 PATH_11_169 PATH_11_170 PATH_11_181 PATH_11_182 PATH_11_193 PATH_11_194 PATH_11_205 PATH_11_206 PATH_11_218 PATH_11_230 PATH_11_242 PATH_11_243 PATH_11_254 PATH_11_255 PATH_11_266 PATH_11_267 PATH_11_279 PATH_11_291 PATH_11_303 PATH_11_304 PATH_11_315 PATH_11_316 PATH_11_327 PATH_11_328 PATH_11_340 PATH_11_352 PATH_11_364 PATH_11_365 PATH_11_376 PATH_11_377 PATH_11_388 PATH_11_389 PATH_11_401 PATH_11_413 PATH_11_425 PATH_11_426 PATH_11_437 PATH_11_438 PATH_11_449 PATH_11_450 PATH_11_462 PATH_11_474 PATH_11_486 PATH_11_487 PATH_11_498 PATH_11_499 PATH_11_510 PATH_11_511 PATH_11_523 PATH_11_535 PATH_11_547 PATH_11_548 PATH_11_559 PATH_11_560 PATH_11_571 PATH_11_572 PATH_11_584 PATH_11_596 PATH_11_608 PATH_11_609 PATH_11_620 PATH_11_621 PATH_11_632 PATH_11_633 PATH_11_645 PATH_11_657 PATH_11_669 PATH_11_670 PATH_11_681 PATH_11_682 PATH_11_693 PATH_11_694 PATH_11_705 PATH_11_706 PATH_11_718 PATH_11_730 PATH_11_742 PATH_11_743 PATH_11_754 PATH_11_755 ...}

@@ -1,0 +1,572 @@
+[icc2-lic Thu Jul  9 20:34:05 2026] Command 'report_timing' requires licenses
+[icc2-lic Thu Jul  9 20:34:05 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Jul  9 20:34:05 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu Jul  9 20:34:05 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu Jul  9 20:34:05 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Jul  9 20:34:05 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Jul  9 20:34:05 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu Jul  9 20:34:05 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu Jul  9 20:34:05 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu Jul  9 20:34:05 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Jul  9 20:34:05 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Jul  9 20:34:05 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+Design : systolic_array_32x32
+Version: W-2024.09
+Date   : Thu Jul  9 20:34:05 2026
+****************************************
+
+  Startpoint: row_sel[0] (input port clocked by CLK)
+  Endpoint: result_out_reg[29] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[0] (in)                                  0.00      2.00 f
+  U24992/Y (INVX1_RVT)                             0.05      2.05 r
+  U19753/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_96186/Y (NAND2X0_RVT)                 0.02      2.11 f
+  ZBUF_76_inst_165926/Y (NBUFFX4_RVT)              0.06      2.17 f
+  HFSINV_26484_43256/Y (IBUFFX2_RVT)               0.06      2.23 r
+  ZBUF_2_inst_165128/Y (NBUFFX8_RVT)               0.04      2.27 r
+  HFSINV_26401_43255/Y (INVX32_RVT)                0.04      2.31 f
+  HFSINV_17772_43231/Y (INVX8_RVT)                 0.09      2.40 r
+  HFSINV_17460_43229/Y (INVX16_RVT)                0.04      2.44 f
+  HFSINV_15117_43222/Y (IBUFFX8_RVT)               0.09      2.53 r
+  U1684/Y (AO22X1_RVT)                             0.06      2.60 r
+  U1683/Y (AO221X1_RVT)                            0.07      2.67 r
+  ctmTdsLR_1_85752/Y (INVX2_RVT)                   0.04      2.71 f
+  ctmTdsLR_2_85753/Y (NAND2X0_RVT)                 0.04      2.76 r
+  ZBUF_2_inst_166051/Y (NBUFFX4_RVT)               0.04      2.80 r
+  ctmTdsLR_3_85754/Y (NOR3X1_RVT)                  0.06      2.86 f
+  U1705/Y (OA22X1_RVT)                             0.06      2.92 f
+  HFSBUF_2_9096/Y (NBUFFX8_RVT)                    0.05      2.97 f
+  ctmTdsLR_3_115687/Y (OA221X1_RVT)                0.09      3.06 f
+  ZBUF_2_inst_166958/Y (NBUFFX4_RVT)               0.05      3.11 f
+  U1703/Y (NAND4X1_RVT)                            0.09      3.20 r
+  ZBUF_2_inst_166172/Y (NBUFFX2_RVT)               0.04      3.24 r
+  HFSBUF_2_9082/Y (NBUFFX8_RVT)                    0.04      3.28 r
+  U1549/Y (OR2X2_RVT)                              0.09      3.37 r
+  U1241/Y (AO22X1_RVT)                             0.05      3.42 r
+  result_out_reg[29]/D (SDFFARX1_RVT)              0.00      3.42 r
+  data arrival time                                          3.42
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[29]/CLK (SDFFARX1_RVT)            0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.07      9.28
+  data required time                                         9.28
+  ------------------------------------------------------------------------
+  data required time                                         9.28
+  data arrival time                                         -3.42
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.86
+
+
+
+  Startpoint: row_sel[0] (input port clocked by CLK)
+  Endpoint: result_out_reg[31] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[0] (in)                                  0.00      2.00 f
+  U24992/Y (INVX1_RVT)                             0.05      2.05 r
+  U19753/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_96186/Y (NAND2X0_RVT)                 0.02      2.11 f
+  ZBUF_76_inst_165926/Y (NBUFFX4_RVT)              0.06      2.17 f
+  HFSINV_26484_43256/Y (IBUFFX2_RVT)               0.06      2.23 r
+  ZBUF_2_inst_165128/Y (NBUFFX8_RVT)               0.04      2.27 r
+  HFSINV_26401_43255/Y (INVX32_RVT)                0.04      2.31 f
+  HFSINV_17772_43231/Y (INVX8_RVT)                 0.09      2.40 r
+  HFSINV_17460_43229/Y (INVX16_RVT)                0.04      2.44 f
+  HFSINV_15495_43224/Y (INVX4_RVT)                 0.08      2.52 r
+  U569/Y (AO22X1_RVT)                              0.07      2.59 r
+  U568/Y (AO221X1_RVT)                             0.06      2.65 r
+  HFSBUF_2_12735/Y (NBUFFX4_RVT)                   0.05      2.70 r
+  U561/Y (NOR4X1_RVT)                              0.10      2.80 f
+  HFSBUF_2_12699/Y (NBUFFX4_RVT)                   0.05      2.85 f
+  ctmTdsLR_2_115079/Y (OA22X1_RVT)                 0.05      2.91 f
+  ctmTdsLR_3_115080/Y (OA221X2_RVT)                0.08      2.98 f
+  ctmTdsLR_5_115082/Y (OA221X1_RVT)                0.07      3.05 f
+  U473/Y (NAND4X1_RVT)                             0.07      3.12 r
+  ZBUF_2_inst_166969/Y (NBUFFX2_RVT)               0.04      3.16 r
+  HFSBUF_2_12219/Y (NBUFFX8_RVT)                   0.05      3.20 r
+  U319/Y (OR2X2_RVT)                               0.09      3.30 r
+  U11/Y (AO22X1_RVT)                               0.05      3.35 r
+  result_out_reg[31]/D (SDFFARX1_RVT)              0.00      3.35 r
+  data arrival time                                          3.35
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                     -0.04      9.46
+  result_out_reg[31]/CLK (SDFFARX1_RVT)            0.00      9.46 r
+  clock uncertainty                               -0.15      9.31
+  library setup time                              -0.07      9.24
+  data required time                                         9.24
+  ------------------------------------------------------------------------
+  data required time                                         9.24
+  data arrival time                                         -3.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.89
+
+
+
+  Startpoint: row_sel[0] (input port clocked by CLK)
+  Endpoint: result_out_reg[13] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[0] (in)                                  0.00      2.00 f
+  U24992/Y (INVX1_RVT)                             0.05      2.05 r
+  U19753/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_96186/Y (NAND2X0_RVT)                 0.02      2.11 f
+  ZBUF_76_inst_165926/Y (NBUFFX4_RVT)              0.06      2.17 f
+  HFSINV_26484_43256/Y (IBUFFX2_RVT)               0.06      2.23 r
+  ZBUF_2_inst_165128/Y (NBUFFX8_RVT)               0.04      2.27 r
+  HFSINV_26401_43255/Y (INVX32_RVT)                0.04      2.31 f
+  HFSINV_17772_43231/Y (INVX8_RVT)                 0.09      2.40 r
+  HFSINV_17460_43229/Y (INVX16_RVT)                0.04      2.44 f
+  HFSINV_14205_43225/Y (INVX8_RVT)                 0.06      2.50 r
+  U11677/Y (AO22X2_RVT)                            0.07      2.58 r
+  U11676/Y (AO221X1_RVT)                           0.07      2.64 r
+  HFSBUF_2_5769/Y (NBUFFX4_RVT)                    0.05      2.70 r
+  U11669/Y (NOR4X1_RVT)                            0.11      2.81 f
+  U11659/Y (OA22X2_RVT)                            0.08      2.89 f
+  U11658/Y (OA221X1_RVT)                           0.07      2.95 f
+  HFSBUF_2_5759/Y (NBUFFX8_RVT)                    0.05      3.00 f
+  U11543/Y (NAND4X0_RVT)                           0.06      3.07 r
+  HFSBUF_2_5687/Y (NBUFFX2_RVT)                    0.05      3.11 r
+  ctmTdsLR_1_131355/Y (INVX8_RVT)                  0.03      3.15 f
+  ctmTdsLR_2_131356/Y (NAND4X1_RVT)                0.10      3.25 r
+  ZBUF_2_inst_166184/Y (NBUFFX2_RVT)               0.04      3.29 r
+  HFSBUF_2_5591/Y (NBUFFX4_RVT)                    0.04      3.34 r
+  U11081/Y (AO22X1_RVT)                            0.05      3.39 r
+  result_out_reg[13]/D (SDFFARX1_RVT)              0.00      3.39 r
+  data arrival time                                          3.39
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[13]/CLK (SDFFARX1_RVT)            0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.07      9.28
+  data required time                                         9.28
+  ------------------------------------------------------------------------
+  data required time                                         9.28
+  data arrival time                                         -3.39
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.90
+
+
+
+  Startpoint: row_sel[0] (input port clocked by CLK)
+  Endpoint: result_out_reg[14] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[0] (in)                                  0.00      2.00 f
+  U24992/Y (INVX1_RVT)                             0.05      2.05 r
+  U19753/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_96186/Y (NAND2X0_RVT)                 0.02      2.11 f
+  ZBUF_76_inst_165926/Y (NBUFFX4_RVT)              0.06      2.17 f
+  HFSINV_26484_43256/Y (IBUFFX2_RVT)               0.06      2.23 r
+  ZBUF_2_inst_165128/Y (NBUFFX8_RVT)               0.04      2.27 r
+  HFSINV_26401_43255/Y (INVX32_RVT)                0.04      2.31 f
+  HFSINV_17772_43231/Y (INVX8_RVT)                 0.09      2.40 r
+  HFSINV_17460_43229/Y (INVX16_RVT)                0.04      2.44 f
+  HFSINV_14637_43220/Y (INVX8_RVT)                 0.06      2.50 r
+  U10871/Y (AO22X1_RVT)                            0.07      2.57 r
+  U10870/Y (AO221X1_RVT)                           0.07      2.64 r
+  HFSBUF_2_5266/Y (NBUFFX4_RVT)                    0.05      2.69 r
+  U10863/Y (NOR4X1_RVT)                            0.10      2.79 f
+  U10930/Y (OA22X2_RVT)                            0.07      2.86 f
+  U10929/Y (OA221X2_RVT)                           0.08      2.94 f
+  HFSBUF_2_5304/Y (NBUFFX4_RVT)                    0.06      3.00 f
+  U10928/Y (NAND4X1_RVT)                           0.09      3.10 r
+  ZBUF_2_inst_165573/Y (NBUFFX2_RVT)               0.04      3.14 r
+  HFSBUF_2_5303/Y (NBUFFX8_RVT)                    0.05      3.18 r
+  U10774/Y (OR2X2_RVT)                             0.08      3.27 r
+  HFSBUF_2_5203/Y (NBUFFX4_RVT)                    0.05      3.31 r
+  U10466/Y (AO22X1_RVT)                            0.05      3.37 r
+  result_out_reg[14]/D (SDFFARX1_RVT)              0.00      3.37 r
+  data arrival time                                          3.37
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                     -0.02      9.48
+  result_out_reg[14]/CLK (SDFFARX1_RVT)            0.00      9.48 r
+  clock uncertainty                               -0.15      9.33
+  library setup time                              -0.07      9.26
+  data required time                                         9.26
+  ------------------------------------------------------------------------
+  data required time                                         9.26
+  data arrival time                                         -3.37
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.90
+
+
+
+  Startpoint: row_sel[1] (input port clocked by CLK)
+  Endpoint: result_out_reg[4] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[1] (in)                                  0.00      2.00 f
+  U24994/Y (INVX1_RVT)                             0.05      2.05 r
+  U19758/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_105834/Y (NAND2X0_RVT)                0.02      2.11 f
+  ZBUF_114_inst_166639/Y (NBUFFX4_RVT)             0.05      2.17 f
+  HFSINV_4270_43387/Y (INVX0_RVT)                  0.03      2.20 r
+  ZBUF_678_inst_168740/Y (NBUFFX8_RVT)             0.04      2.25 r
+  HFSINV_3804_43386/Y (INVX2_RVT)                  0.06      2.31 f
+  ZBUF_440_inst_168745/Y (NBUFFX8_RVT)             0.06      2.37 f
+  HFSINV_746_43381/Y (INVX0_RVT)                   0.08      2.45 r
+  ZBUF_927_inst_166398/Y (NBUFFX2_RVT)             0.05      2.50 r
+  ctmTdsLR_1_65200/Y (AO222X1_RVT)                 0.11      2.61 r
+  ctmTdsLR_2_65201/Y (AO21X1_RVT)                  0.03      2.64 r
+  ZBUF_2_inst_166668/Y (NBUFFX4_RVT)               0.05      2.69 r
+  U16630/Y (NOR4X1_RVT)                            0.08      2.76 f
+  ZBUF_2_inst_166456/Y (NBUFFX4_RVT)               0.04      2.80 f
+  U16849/Y (OA22X1_RVT)                            0.05      2.86 f
+  HFSBUF_2_8965/Y (NBUFFX4_RVT)                    0.06      2.92 f
+  U16848/Y (OA221X2_RVT)                           0.09      3.00 f
+  U16771/Y (NAND4X1_RVT)                           0.08      3.08 r
+  ZBUF_2_inst_165584/Y (NBUFFX2_RVT)               0.04      3.12 r
+  HFSBUF_2_8917/Y (NBUFFX8_RVT)                    0.04      3.17 r
+  U16617/Y (OR2X2_RVT)                             0.07      3.24 r
+  HFSBUF_2_8825/Y (NBUFFX16_RVT)                   0.04      3.28 r
+  ctmTdsLR_1_158319/Y (AO222X1_RVT)                0.09      3.38 r
+  result_out_reg[4]/D (SDFFARX1_RVT)               0.00      3.38 r
+  data arrival time                                          3.38
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[4]/CLK (SDFFARX1_RVT)             0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.07      9.28
+  data required time                                         9.28
+  ------------------------------------------------------------------------
+  data required time                                         9.28
+  data arrival time                                         -3.38
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.91
+
+
+
+  Startpoint: row_sel[0] (input port clocked by CLK)
+  Endpoint: result_out_reg[11] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[0] (in)                                  0.00      2.00 f
+  U24992/Y (INVX1_RVT)                             0.05      2.05 r
+  U19753/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_96186/Y (NAND2X0_RVT)                 0.02      2.11 f
+  ZBUF_76_inst_165926/Y (NBUFFX4_RVT)              0.06      2.17 f
+  HFSINV_26484_43256/Y (IBUFFX2_RVT)               0.06      2.23 r
+  ZBUF_2_inst_165128/Y (NBUFFX8_RVT)               0.04      2.27 r
+  HFSINV_26401_43255/Y (INVX32_RVT)                0.04      2.31 f
+  HFSINV_17772_43231/Y (INVX8_RVT)                 0.09      2.40 r
+  HFSINV_17460_43229/Y (INVX16_RVT)                0.04      2.44 f
+  HFSINV_14637_43220/Y (INVX8_RVT)                 0.06      2.50 r
+  U12716/Y (AO22X1_RVT)                            0.06      2.57 r
+  U12715/Y (AO221X1_RVT)                           0.07      2.64 r
+  HFSBUF_2_6416/Y (NBUFFX4_RVT)                    0.05      2.69 r
+  U12708/Y (NOR4X1_RVT)                            0.09      2.79 f
+  U12851/Y (OA22X2_RVT)                            0.07      2.86 f
+  U12850/Y (OA221X2_RVT)                           0.09      2.95 f
+  HFSBUF_2_6496/Y (NBUFFX4_RVT)                    0.06      3.01 f
+  U12773/Y (NAND4X1_RVT)                           0.08      3.09 r
+  ZBUF_2_inst_166965/Y (NBUFFX2_RVT)               0.04      3.13 r
+  HFSBUF_2_6450/Y (NBUFFX8_RVT)                    0.05      3.18 r
+  U12619/Y (OR2X2_RVT)                             0.09      3.27 r
+  HFSBUF_2_6355/Y (NBUFFX4_RVT)                    0.05      3.31 r
+  U12311/Y (AO22X1_RVT)                            0.05      3.37 r
+  result_out_reg[11]/D (SDFFARX1_RVT)              0.00      3.37 r
+  data arrival time                                          3.37
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[11]/CLK (SDFFARX1_RVT)            0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.07      9.28
+  data required time                                         9.28
+  ------------------------------------------------------------------------
+  data required time                                         9.28
+  data arrival time                                         -3.37
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.92
+
+
+
+  Startpoint: row_sel[1] (input port clocked by CLK)
+  Endpoint: result_out_reg[27] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[1] (in)                                  0.00      2.00 f
+  U24994/Y (INVX1_RVT)                             0.05      2.05 r
+  U19758/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_105834/Y (NAND2X0_RVT)                0.02      2.11 f
+  ZBUF_114_inst_166639/Y (NBUFFX4_RVT)             0.05      2.17 f
+  HFSINV_4270_43387/Y (INVX0_RVT)                  0.03      2.20 r
+  ZBUF_678_inst_168740/Y (NBUFFX8_RVT)             0.04      2.25 r
+  HFSINV_3804_43386/Y (INVX2_RVT)                  0.06      2.31 f
+  ZBUF_440_inst_168745/Y (NBUFFX8_RVT)             0.06      2.37 f
+  HFSINV_746_43381/Y (INVX0_RVT)                   0.08      2.45 r
+  ZBUF_853_inst_166397/Y (NBUFFX4_RVT)             0.06      2.51 r
+  ctmTdsLR_1_65596/Y (AO222X1_RVT)                 0.10      2.61 r
+  ctmTdsLR_2_65597/Y (AO21X1_RVT)                  0.03      2.64 r
+  ZBUF_2_inst_166008/Y (NBUFFX4_RVT)               0.05      2.69 r
+  U2599/Y (NOR4X1_RVT)                             0.08      2.77 f
+  HFSBUF_2_11083/Y (NBUFFX2_RVT)                   0.04      2.81 f
+  U2513/Y (OA22X1_RVT)                             0.07      2.88 f
+  HFSBUF_2_11044/Y (NBUFFX16_RVT)                  0.05      2.93 f
+  U2512/Y (OA221X1_RVT)                            0.12      3.05 f
+  HFSBUF_2_11043/Y (NBUFFX4_RVT)                   0.06      3.11 f
+  U2473/Y (NAND4X0_RVT)                            0.05      3.16 r
+  HFSBUF_2_11027/Y (NBUFFX2_RVT)                   0.04      3.20 r
+  ctmTdsLR_1_53556/Y (OR2X1_RVT)                   0.04      3.24 r
+  ZBUF_2_inst_165629/Y (NBUFFX16_RVT)              0.04      3.28 r
+  U2471/Y (AO22X1_RVT)                             0.07      3.35 r
+  result_out_reg[27]/D (SDFFARX1_RVT)              0.00      3.35 r
+  data arrival time                                          3.35
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[27]/CLK (SDFFARX1_RVT)            0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.07      9.28
+  data required time                                         9.28
+  ------------------------------------------------------------------------
+  data required time                                         9.28
+  data arrival time                                         -3.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.94
+
+
+
+  Startpoint: row_sel[0] (input port clocked by CLK)
+  Endpoint: result_out_reg[12] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[0] (in)                                  0.00      2.00 f
+  U24992/Y (INVX1_RVT)                             0.05      2.05 r
+  U19753/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_96186/Y (NAND2X0_RVT)                 0.02      2.11 f
+  ZBUF_76_inst_165926/Y (NBUFFX4_RVT)              0.06      2.17 f
+  HFSINV_26484_43256/Y (IBUFFX2_RVT)               0.06      2.23 r
+  ZBUF_2_inst_165128/Y (NBUFFX8_RVT)               0.04      2.27 r
+  HFSINV_26401_43255/Y (INVX32_RVT)                0.04      2.31 f
+  HFSINV_17772_43231/Y (INVX8_RVT)                 0.09      2.40 r
+  HFSINV_17460_43229/Y (INVX16_RVT)                0.04      2.44 f
+  HFSINV_14729_43219/Y (INVX4_RVT)                 0.07      2.51 r
+  U12025/Y (AO22X1_RVT)                            0.06      2.57 r
+  U12024/Y (AO221X1_RVT)                           0.07      2.65 r
+  HFSBUF_2_5993/Y (NBUFFX4_RVT)                    0.05      2.70 r
+  U12017/Y (NOR4X1_RVT)                            0.10      2.80 f
+  U12198/Y (OA22X2_RVT)                            0.07      2.87 f
+  U12197/Y (OA221X1_RVT)                           0.06      2.93 f
+  HFSBUF_2_6100/Y (NBUFFX4_RVT)                    0.06      2.99 f
+  U12158/Y (NAND4X1_RVT)                           0.09      3.08 r
+  ZBUF_2_inst_165582/Y (NBUFFX2_RVT)               0.04      3.12 r
+  HFSBUF_2_6075/Y (NBUFFX8_RVT)                    0.05      3.17 r
+  U12004/Y (OR2X2_RVT)                             0.09      3.25 r
+  HFSBUF_2_5982/Y (NBUFFX4_RVT)                    0.05      3.30 r
+  U11696/Y (AO22X1_RVT)                            0.04      3.34 r
+  result_out_reg[12]/D (SDFFARX1_RVT)              0.00      3.34 r
+  data arrival time                                          3.34
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[12]/CLK (SDFFARX1_RVT)            0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.07      9.28
+  data required time                                         9.28
+  ------------------------------------------------------------------------
+  data required time                                         9.28
+  data arrival time                                         -3.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.94
+
+
+
+  Startpoint: row_sel[1] (input port clocked by CLK)
+  Endpoint: result_out_reg[30] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 r
+  row_sel[1] (in)                                  0.00      2.00 r
+  U24994/Y (INVX1_RVT)                             0.04      2.04 f
+  U19755/Y (AND2X2_RVT)                            0.05      2.09 f
+  ctmTdsLR_1_96187/Y (NAND2X0_RVT)                 0.03      2.12 r
+  ZBUF_32_inst_166381/Y (NBUFFX4_RVT)              0.04      2.16 r
+  HFSINV_20111_43355/Y (IBUFFX2_RVT)               0.05      2.22 f
+  ZBUF_1887_inst_165177/Y (NBUFFX16_RVT)           0.04      2.26 f
+  HFSINV_16268_43329/Y (INVX8_RVT)                 0.08      2.34 r
+  HFSINV_15092_43328/Y (INVX8_RVT)                 0.05      2.39 f
+  ZBUF_1351_inst_165980/Y (NBUFFX8_RVT)            0.08      2.47 f
+  HFSBUF_14085_43324/Y (NBUFFX8_RVT)               0.05      2.52 f
+  HFSINV_12960_43322/Y (INVX1_RVT)                 0.04      2.56 r
+  HFSINV_12947_43321/Y (INVX8_RVT)                 0.03      2.59 f
+  U1030/Y (AO221X1_RVT)                            0.08      2.67 f
+  HFSBUF_2_4908/Y (NBUFFX4_RVT)                    0.06      2.73 f
+  U1023/Y (NOR4X1_RVT)                             0.09      2.83 r
+  U1128/Y (OA22X1_RVT)                             0.07      2.90 r
+  HFSBUF_2_5521/Y (NBUFFX4_RVT)                    0.05      2.95 r
+  U1127/Y (OA221X1_RVT)                            0.05      3.00 r
+  U1088/Y (NAND4X0_RVT)                            0.11      3.11 f
+  HFSBUF_2_5273/Y (NBUFFX8_RVT)                    0.07      3.18 f
+  U934/Y (OR2X2_RVT)                               0.09      3.28 f
+  U626/Y (AO22X1_RVT)                              0.07      3.34 f
+  result_out_reg[30]/D (SDFFARX1_RVT)              0.00      3.34 f
+  data arrival time                                          3.34
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[30]/CLK (SDFFARX1_RVT)            0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.06      9.29
+  data required time                                         9.29
+  ------------------------------------------------------------------------
+  data required time                                         9.29
+  data arrival time                                         -3.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.95
+
+
+
+  Startpoint: row_sel[0] (input port clocked by CLK)
+  Endpoint: result_out_reg[1] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             2.00      2.00 f
+  row_sel[0] (in)                                  0.00      2.00 f
+  U24992/Y (INVX1_RVT)                             0.05      2.05 r
+  U19753/Y (AND2X2_RVT)                            0.04      2.09 r
+  ctmTdsLR_1_96186/Y (NAND2X0_RVT)                 0.02      2.11 f
+  ZBUF_76_inst_165926/Y (NBUFFX4_RVT)              0.06      2.17 f
+  HFSINV_26484_43256/Y (IBUFFX2_RVT)               0.06      2.23 r
+  ZBUF_2_inst_165128/Y (NBUFFX8_RVT)               0.04      2.27 r
+  HFSINV_26401_43255/Y (INVX32_RVT)                0.04      2.31 f
+  HFSINV_17772_43231/Y (INVX8_RVT)                 0.09      2.40 r
+  HFSINV_17460_43229/Y (INVX16_RVT)                0.04      2.44 f
+  HFSINV_16369_43217/Y (INVX4_RVT)                 0.06      2.50 r
+  U18828/Y (AO22X2_RVT)                            0.08      2.58 r
+  U18827/Y (AO221X1_RVT)                           0.07      2.65 r
+  HFSBUF_2_10209/Y (NBUFFX4_RVT)                   0.05      2.70 r
+  U18820/Y (NOR4X1_RVT)                            0.10      2.80 f
+  HFSBUF_2_10204/Y (NBUFFX2_RVT)                   0.05      2.84 f
+  ctmTdsLR_5_97977/Y (OA222X2_RVT)                 0.09      2.93 f
+  ctmTdsLR_6_97978/Y (NAND2X0_RVT)                 0.09      3.02 r
+  HFSINV_4_10269/Y (INVX0_RVT)                     0.06      3.08 f
+  U18923/Y (NAND4X0_RVT)                           0.09      3.17 r
+  HFSBUF_2_10268/Y (NBUFFX8_RVT)                   0.05      3.23 r
+  ctmTdsLR_1_53569/Y (AO222X1_RVT)                 0.11      3.33 r
+  result_out_reg[1]/D (SDFFARX1_RVT)               0.00      3.33 r
+  data arrival time                                          3.33
+
+  clock CLK (rise edge)                            9.50      9.50
+  clock network delay (ideal)                      0.00      9.50
+  result_out_reg[1]/CLK (SDFFARX1_RVT)             0.00      9.50 r
+  clock uncertainty                               -0.15      9.35
+  library setup time                              -0.07      9.28
+  data required time                                         9.28
+  ------------------------------------------------------------------------
+  data required time                                         9.28
+  data arrival time                                         -3.33
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.95
+
+
+1

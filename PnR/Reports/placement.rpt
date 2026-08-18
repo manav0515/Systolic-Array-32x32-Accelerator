@@ -1,0 +1,47 @@
+[icc2-lic Thu Jul  9 15:26:58 2026] Command 'report_placement' requires licenses
+[icc2-lic Thu Jul  9 15:26:58 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu Jul  9 15:26:58 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Jul  9 15:26:58 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Jul  9 15:26:58 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu Jul  9 15:26:59 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu Jul  9 15:26:59 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu Jul  9 15:26:59 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu Jul  9 15:26:59 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Jul  9 15:26:59 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Jul  9 15:26:59 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Jul  9 15:26:59 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Jul  9 15:26:59 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu Jul  9 15:26:59 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu Jul  9 15:26:59 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu Jul  9 15:26:59 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu Jul  9 15:26:59 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Jul  9 15:26:59 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Jul  9 15:26:59 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : report_placement
+Design : systolic_array_32x32
+Version: W-2024.09
+Date   : Thu Jul  9 15:26:59 2026
+****************************************
+  ==================
+  Note: Including violations of fixed cells or between fixed pairs of cells. 
+        To ignore violations of / between fixed cells, enable -ignore_fixed. 
+  ==================
+
+  Wire length report (all)
+  ==================
+  wire length in design systolic_array_32x32: 19950441.992 microns.
+  wire length in design systolic_array_32x32 (see through blk pins): 19950441.992 microns.
+
+  Physical hierarchy violations report
+  ====================================
+  Violations in design systolic_array_32x32:
+     0 cells have placement violation.
+
+  Voltage area violations report
+  ====================================
+  Voltage area placement violations in design systolic_array_32x32:
+     0 cells placed outside the voltage area which they belong to.
+
+Information: Default error view systolic_array_32x32_dpplace.err is created in GUI error browser. (DPP-054)
+1
